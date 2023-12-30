@@ -26,13 +26,7 @@ interface Props {
       <p class="text-gray-600 text-sm mb-4">
         {formatDate(article.data.pubDate)}
       </p>
-      <div class="flex flex-wrap gap-2">
-        {
-          article.data.tags.map((tag: string, index: number) => (
-            <Tags tag={tag} index={index} />
-          ))
-        }
-      </div>
+      <Tags tags={article.data.tags} />
     </div>
   </div>
 </div>
