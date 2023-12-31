@@ -4,6 +4,7 @@ import { getCollection, type CollectionEntry } from "astro:content";
 export const GET: APIRoute = async ({ url }): Promise<Response> => {
   const query: string | null = url.searchParams.get("query");
 
+  // Handle if query is not present
   if (query === null) {
     return new Response(
       JSON.stringify({
@@ -22,6 +23,7 @@ export const GET: APIRoute = async ({ url }): Promise<Response> => {
     "blog"
   );
 
+  // Filter articles based on query
   const searchResults = allBlogArticles.filter((article) => {
     const titleMatch: boolean = article.data.title
       .toLowerCase()
