@@ -24,6 +24,8 @@ const articlesForPage: CollectionEntry<"blog">[] = allBlogArticles.slice(
   (currentPage - 1) * ARTICLES_PER_PAGE,
   currentPage * ARTICLES_PER_PAGE
 );
+
+if (currentPage > totalPages) return Astro.redirect("/404");
 ---
 
 <MainLayout>
