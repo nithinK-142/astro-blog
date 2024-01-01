@@ -6,6 +6,8 @@ import { getCollection, type CollectionEntry } from "astro:content";
 
 const query: string | null = Astro.url.searchParams.get("query");
 
+if (query === null) return Astro.redirect("/404");
+
 const allBlogArticles: CollectionEntry<"blog">[] = await getCollection("blog");
 
 // Filter articles based on query
