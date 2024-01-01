@@ -14,3 +14,21 @@ export const NAV_LINKS = [
   { path: "/articles", navLink: "All Articles" },
   { path: "/about", navLink: "About" },
 ];
+
+export const TEAM_MEMBERS = [
+  {
+    src: "/team1.png",
+    name: "John Doe",
+    role: "Founder & Editor-in-Chief",
+  },
+  {
+    src: "/team2.png",
+    name: "Paul Newman",
+    role: "Lead Writer",
+  },
+  {
+    src: "/team3.png",
+    name: "Johanna Johnson",
+    role: "Tech Analyst",
+  },
+];
