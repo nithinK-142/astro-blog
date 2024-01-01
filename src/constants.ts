@@ -8,3 +8,9 @@ export const FOOTER_DESCRIPTION =
   "TechPeople is a blog for tech enthusiasts. We publish articles, stories and tutorials about the latest technology trends and advancements.";
 
 export const SOCIALS = ["Email", "Twitter", "Facebook", "Instagram"];
+
+export const NAV_LINKS = [
+  { path: "/", navLink: "Home" },
+  { path: "/articles", navLink: "All Articles" },
+  { path: "/about", navLink: "About" },
+];
