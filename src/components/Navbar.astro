@@ -1,5 +1,6 @@
 ---
 import { Image } from "astro:assets";
+import logo from "../images/logo.png";
 ---
 
 <nav class="bg-gray-900 text-white">
@@ -8,7 +9,7 @@ import { Image } from "astro:assets";
   >
     <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
       <Image
-        src="/logo.png"
+        src={logo}
         class="h-14"
         alt="TechPeople Logo"
         width={55}
