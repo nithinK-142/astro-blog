@@ -1,0 +1,14 @@
+---
+const { path = "/articles", text = "Back To Articles" } = Astro.props;
+
+interface Props {
+  path?: string;
+  text?: string;
+}
+---
+
+<a
+  href={path}
+  class="inline-block bg-gray-100 p-2 mb-6 hover:bg-indigo-500 hover:text-white rounded-md"
+  >{text}</a
+>
